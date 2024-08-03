@@ -24,3 +24,12 @@ yarn-error.log*
 
 
 .idea
+
+# zero-install
+
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
