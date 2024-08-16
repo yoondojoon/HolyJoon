@@ -1,17 +1,19 @@
 import React from 'react';
-import '../styles/App.css';
-import routes from '../routes';
+import './styles/App.css';
+import './styles/index.css';
+import routes from './routes';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import ContextProvider from '../context/ContextProvider';
+import { StyleProvider } from '@ant-design/cssinjs';
 
 function App() {
   const router = createBrowserRouter(routes);
+
   return (
-    <ContextProvider>
+    <StyleProvider layer>
       <RouterProvider router={router} />
-    </ContextProvider>
+    </StyleProvider>
   );
 }
 
